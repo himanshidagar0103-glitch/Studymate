@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tile>StudyMate-Student Study Planeer</tile>
+        <link rel="stylesheet" href="style.CSS">
+    </head>
+    <body>
+<!--Navigation Bar-->
+<nav>
+    <h2>StudyMate</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sujects</a></li>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Timetable</a></li>
+        <li><a href="#">Progrees</a></li>
+    </ul>
+</nav>
+
+<!--Home Section-->
+<section>
+    <h1>Welcome to StudyMate</h1>
+    <p> Your Simple Student Study Planner.</p>
+    <button oneclick="startPlanning()">Start Planning</button>
+</section>
+ <script src="script.js"></script>
+ <!--subject section-->
+<section id="subject">
+    <h2>My Subjects</h2>
+    <div class="subjects-container">
+    <div class="subject-card">
+        <h3>Data Structure</h3>
+        <p>Learn stacks,queues,trees and more.</p>
+    </div>
+    <div class="subject-card">
+        <h3>Digital Electronics</h3>
+        <p> Learn logic gates,circuits and digital systems.</p>
+    </div>
+    <div class="subject-card">
+<h3>Mathematics</h3>
+<p>practice important concepts and numerical problems.</p>
+    </div>
+    <div class="subject-card">
+        <h3>Analog electronic circuit</h3>
+        <p>Learn Op-Amps,Power Amplifier,BJT and more.</p>
+    </div>
+    </div>
+</section>
+<section id="tasks">
+    <h2>My Tasks</h2>
+    <div class="task-box">
+        <input type="text" id="taskInput"
+        placeholder="Enter your study task">
+        <button oneclick="addTask()">Add Task</button>
+    </div>
+    <ul id="tasklist"></ul>
+</section>
+
+<section id="study-timer">
+    <h2>Study Timer</h2>
+    <p id="timer-status">Ready to study?</p>
+
+    <div id="timer-display">25:00</div>
+
+    <div class="timer-buttons">
+        <button oneclick="startTimer()">Start</button>
+        <button oneclick="pauseTimer()">Pause</button>
+        <button oneclick="resetTimer()">Reset</button>
+    </div>
+</section>
+
+<section id="study-progress">
+    <h2>📊 Study Progress</h2>
+
+    <div class="progress-cards">
+        <div class="progress-card">
+            <h3>Tasks Completed</h3>
+            <p id="completedTasks">0</p>
+        </div>
+
+        <div class="progress-card">
+            <h3>Study Time</h3>
+            <p id="studyTime">0 min</p>
+        </div>
+        </div>
+        <h3> Daily Goal Progress-track</h3>
+        <p id="goalText">0% completed</p>
+        <div class=""progress-track">
+        <div id="goalProgress"
+    class="progress-fill"></div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+    </body>
+    </html>
